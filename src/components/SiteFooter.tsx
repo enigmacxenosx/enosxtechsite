@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, MessageCircle, Mail } from "lucide-react";
+import { Instagram, MessageCircle, Mail, Users } from "lucide-react";
 import logo from "@/assets/enosx-logo.png";
-import { PRODUCTS, SITE } from "@/lib/site";
+import { PRODUCTS, SITE, WHATSAPP_GROUPS } from "@/lib/site";
 import { NewsletterSignup } from "./NewsletterSignup";
+
 
 
 export function SiteFooter() {
@@ -79,6 +80,18 @@ export function SiteFooter() {
                 <MessageCircle className="h-4 w-4" /> {SITE.whatsappDisplay}
               </a>
             </li>
+            {WHATSAPP_GROUPS.map((g) => (
+              <li key={g.url}>
+                <a
+                  href={g.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <Users className="h-4 w-4" /> {g.name}
+                </a>
+              </li>
+            ))}
             {SITE.instagram.map((ig) => (
               <li key={ig.handle}>
                 <a
@@ -99,8 +112,17 @@ export function SiteFooter() {
                 <Mail className="h-4 w-4" /> {SITE.email}
               </a>
             </li>
+            <li>
+              <Link
+                to="/leadership"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                Leadership
+              </Link>
+            </li>
           </ul>
         </div>
+
       </div>
 
       <div className="border-t border-border px-5 py-6 text-center text-xs text-muted-foreground">
