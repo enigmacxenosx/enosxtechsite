@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Bot, Cpu, Github, Mic, Sparkles, Terminal, Globe } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { ProductCard } from "@/components/ProductCard";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
+
 import { PRODUCTS, SITE } from "@/lib/site";
 import heroImage from "@/assets/hero-aero.jpg";
 
@@ -164,6 +166,12 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* Newsletter */}
+      <section className="mx-auto max-w-3xl px-5 pt-24">
+        <NewsletterSignup />
+      </section>
     </PageShell>
+
   );
 }

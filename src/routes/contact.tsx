@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Instagram, Mail, MessageCircle } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { SITE } from "@/lib/site";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
+
 
 const TITLE = "Contact Enosx Technologies — WhatsApp & Instagram";
 const DESCRIPTION =
@@ -128,6 +130,11 @@ function ContactPage() {
           </button>
         </form>
       </section>
+
+      <section className="mx-auto max-w-6xl px-5 pt-10">
+        <NewsletterSignup />
+      </section>
+
     </PageShell>
   );
 }
