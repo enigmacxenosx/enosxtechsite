@@ -1,21 +1,18 @@
 import { ArrowUpRight } from "lucide-react";
 import type { Product } from "@/lib/site";
 
-const ACCENT: Record<Product["accent"], { ring: string; text: string; glow: string }> = {
+const ACCENT: Record<Product["accent"], { ring: string; text: string }> = {
   cyan: {
-    ring: "hover:border-cyan-brand/60",
+    ring: "hover:border-cyan-brand/60 hover:shadow-[var(--shadow-glow-cyan)]",
     text: "text-cyan-brand",
-    glow: "shadow-[var(--shadow-glow-cyan)]",
   },
   purple: {
-    ring: "hover:border-purple-brand/60",
+    ring: "hover:border-purple-brand/60 hover:shadow-[var(--shadow-glow-purple)]",
     text: "text-purple-brand",
-    glow: "shadow-[var(--shadow-glow-purple)]",
   },
   crimson: {
-    ring: "hover:border-crimson-brand/60",
+    ring: "hover:border-crimson-brand/60 hover:shadow-[var(--shadow-glow-crimson)]",
     text: "text-crimson-brand",
-    glow: "shadow-[var(--shadow-glow-crimson)]",
   },
 };
 
@@ -27,8 +24,9 @@ export function ProductCard({ product }: { product: Product }) {
       href={product.url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group glass flex flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 ${a.ring} hover:${a.glow}`}
+      className={`group glass flex flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 ${a.ring}`}
     >
+
       <span
         className={`font-display text-xs font-bold uppercase tracking-widest ${a.text}`}
       >
