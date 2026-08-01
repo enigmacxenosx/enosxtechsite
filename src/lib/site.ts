@@ -13,6 +13,38 @@ export const SITE = {
   email: "hello@enosx.tech",
 } as const;
 
+export const WHATSAPP_GROUPS = [
+  {
+    name: "Official WhatsApp Group",
+    desc: "Announcements, product updates and direct support from the Enosx team.",
+    url: "https://chat.whatsapp.com/DOm9q02A7Vb0WteCoRiCGc",
+    accent: "cyan" as const,
+  },
+  {
+    name: "Gaming WhatsApp Group",
+    desc: "Our gaming community — tournaments, matchmaking and late-night lobbies.",
+    url: "https://chat.whatsapp.com/KjY1hoHnsHg11rObOlW1rs",
+    accent: "purple" as const,
+  },
+];
+
+export type Leader = {
+  name: string;
+  role: string;
+  initials: string;
+  bio: string;
+};
+
+export const LEADERSHIP: Leader[] = [
+  {
+    name: "Enosh Yeswa",
+    role: "Chief Executive Officer",
+    initials: "EY",
+    bio: "Founder of Enosx Technologies (2024). Sets product direction across ENOSX AI, the Enosx Tech Store and ExLover Coach, with one standard: speed is UX.",
+  },
+];
+
+
 export type Product = {
   slug: string;
   name: string;

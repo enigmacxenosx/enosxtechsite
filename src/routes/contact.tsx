@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Instagram, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail, MessageCircle, Users } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
-import { SITE } from "@/lib/site";
+import { SITE, WHATSAPP_GROUPS } from "@/lib/site";
+
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 
@@ -131,9 +132,34 @@ function ContactPage() {
         </form>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 pt-10">
+      <section className="mx-auto max-w-6xl px-5 pt-16">
+        <h2 className="text-3xl font-bold">Join our communities</h2>
+        <p className="mt-3 max-w-2xl text-muted-foreground">
+          Hop into our WhatsApp groups for updates, support and gaming nights.
+        </p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {WHATSAPP_GROUPS.map((g) => (
+            <a
+              key={g.url}
+              href={g.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass flex items-start gap-4 rounded-2xl p-6 transition-colors hover:border-whatsapp/60"
+            >
+              <Users className="mt-1 h-7 w-7 text-whatsapp" />
+              <div>
+                <h3 className="text-lg font-semibold">{g.name}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{g.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pt-16">
         <NewsletterSignup />
       </section>
+
 
     </PageShell>
   );

@@ -7,9 +7,11 @@ import { SITE } from "@/lib/site";
 const NAV = [
   { to: "/", label: "Home" },
   { to: "/products", label: "Products" },
+  { to: "/leadership", label: "Leadership" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
+
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
