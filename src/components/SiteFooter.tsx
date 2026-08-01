@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle, Mail } from "lucide-react";
 import logo from "@/assets/enosx-logo.png";
 import { PRODUCTS, SITE } from "@/lib/site";
+import { NewsletterSignup } from "./NewsletterSignup";
+
 
 export function SiteFooter() {
   return (
@@ -25,7 +27,14 @@ export function SiteFooter() {
             {SITE.tagline} Founded in {SITE.founded} by {SITE.founder}, building multimodal AI,
             commerce and coaching products from Kenya to the world.
           </p>
+          <h2 className="mt-7 font-display text-xs font-bold tracking-widest text-muted-foreground">
+            NEWSLETTER
+          </h2>
+          <div className="mt-3 max-w-sm">
+            <NewsletterSignup compact />
+          </div>
         </div>
+
 
         <div>
           <h2 className="font-display text-xs font-bold tracking-widest text-muted-foreground">
