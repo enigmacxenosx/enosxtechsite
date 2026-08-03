@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { LEADERSHIP, SITE } from "@/lib/site";
-import enoshPhoto from "@/assets/leader-enosh.jpg";
+import enoshPhoto from "@/assets/leader-enosh.jpg.asset.json";
 import fortunePhoto from "@/assets/leader-fortune.jpg";
 
 const PHOTOS: Record<"enosh" | "fortune", string> = {
-  enosh: enoshPhoto,
+  enosh: enoshPhoto.url,
   fortune: fortunePhoto,
 };
 
