@@ -31,7 +31,7 @@ export const WHATSAPP_GROUPS = [
 export type Leader = {
   name: string;
   role: string;
-  initials: string;
+  photoKey: "enosh" | "fortune";
   bio: string;
 };
 
@@ -39,10 +39,17 @@ export const LEADERSHIP: Leader[] = [
   {
     name: "Enosh Yeswa",
     role: "Chief Executive Officer",
-    initials: "EY",
+    photoKey: "enosh",
     bio: "Founder of Enosx Technologies (2024). Sets product direction across ENOSX AI, the Enosx Tech Store and ExLover Coach, with one standard: speed is UX.",
   },
+  {
+    name: "Fortune",
+    role: "Head of SEO",
+    photoKey: "fortune",
+    bio: "Leads search and organic growth across every Enosx product — keyword strategy, technical SEO and content that puts our work in front of the right people.",
+  },
 ];
+
 
 
 export type Product = {

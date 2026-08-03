@@ -1,6 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { LEADERSHIP, SITE } from "@/lib/site";
+import enoshPhoto from "@/assets/leader-enosh.jpg";
+import fortunePhoto from "@/assets/leader-fortune.jpg";
+
+const PHOTOS: Record<"enosh" | "fortune", string> = {
+  enosh: enoshPhoto,
+  fortune: fortunePhoto,
+};
+
 
 const TITLE = "Leadership — Enosx Technologies";
 const DESCRIPTION =
@@ -40,20 +48,25 @@ function LeadershipPage() {
       <section className="mx-auto max-w-6xl px-5">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LEADERSHIP.map((l) => (
-            <article key={l.name} className="glass rounded-2xl p-7">
-              <div
-                className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-brand font-display text-lg font-bold text-primary-foreground"
-                aria-hidden="true"
-              >
-                {l.initials}
+            <article key={l.name} className="glass overflow-hidden rounded-2xl">
+              <img
+                src={PHOTOS[l.photoKey]}
+                alt={`Portrait of ${l.name}, ${l.role} at ${SITE.name}`}
+                width={816}
+                height={816}
+                loading="lazy"
+                className="aspect-square w-full object-cover"
+              />
+              <div className="p-7">
+                <h2 className="text-xl font-bold">{l.name}</h2>
+                <p className="mt-1 font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">
+                  {l.role}
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{l.bio}</p>
               </div>
-              <h2 className="mt-5 text-xl font-bold">{l.name}</h2>
-              <p className="mt-1 font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">
-                {l.role}
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{l.bio}</p>
             </article>
           ))}
+
         </div>
       </section>
 
