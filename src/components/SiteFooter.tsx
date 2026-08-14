@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle, Mail, Users } from "lucide-react";
-import logo from "@/assets/enosx-logo.png";
+import logo from "@/assets/enosx-logo-new.png";
 import { PRODUCTS, SITE, WHATSAPP_GROUPS } from "@/lib/site";
 import { NewsletterSignup } from "./NewsletterSignup";
 
@@ -54,7 +54,7 @@ export function SiteFooter() {
                 </a>
               </li>
             ))}
-            <li>
+                        <li>
               <Link
                 to="/products"
                 className="text-muted-foreground transition-colors hover:text-primary"
@@ -62,8 +62,33 @@ export function SiteFooter() {
                 All products
               </Link>
             </li>
+            <li>
+              <Link
+                to="/pricing"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/careers"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                Careers
+              </Link>
+            </li>
           </ul>
         </div>
+
 
         <div>
           <h2 className="font-display text-xs font-bold tracking-widest text-muted-foreground">

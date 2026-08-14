@@ -4,7 +4,7 @@ import { PageShell } from "@/components/PageShell";
 import { ProductCard } from "@/components/ProductCard";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
-import { PRODUCTS, SITE } from "@/lib/site";
+import { PRODUCTS, SITE, TESTIMONIALS } from "@/lib/site";
 import heroImage from "@/assets/hero-aero.jpg";
 
 const TITLE = "Enosx Technologies — Multimodal AI, Commerce & Coaching";
@@ -123,6 +123,26 @@ function Index() {
               <h3 className="mt-4 text-lg font-semibold">{title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{desc}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="mx-auto max-w-6xl px-5 pt-24">
+        <h2 className="text-3xl font-bold md:text-4xl">What people are saying</h2>
+        <p className="mt-3 max-w-2xl text-muted-foreground">
+          Real feedback from real users of our products.
+        </p>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {TESTIMONIALS.map((t) => (
+            <blockquote key={t.name} className="glass rounded-xl p-6">
+              <p className="text-sm italic leading-relaxed text-muted-foreground">"{t.text}"</p>
+              <footer className="mt-4">
+                <div className="text-sm font-semibold">{t.name}</div>
+                <div className="text-xs text-muted-foreground">{t.role}</div>
+                <div className="mt-1 text-xs font-medium text-cyan-brand">{t.product}</div>
+              </footer>
+            </blockquote>
           ))}
         </div>
       </section>

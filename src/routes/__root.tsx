@@ -88,7 +88,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Enosh Yeswa" },
       { property: "og:site_name", content: "Enosx Technologies" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:url", content: "https://enosxtechnologies.vercel.app" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "keywords", content: "Enosx Technologies, ENOSX AI, AI assistant, e-commerce, tech store, Kenya, Kakamega, web development, coaching" },
+      { name: "robots", content: "index, follow" },
+      { type: "application/ld+json", innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Enosx Technologies",
+        "url": "https://enosxtechnologies.vercel.app",
+        "logo": "https://enosxtechnologies.vercel.app/favicon.png",
+        "founder": {
+          "@type": "Person",
+          "name": "Enosh Yeswa"
+        },
+        "foundingDate": "2024",
+        "description": "Enosx Technologies builds multimodal AI assistants, commerce experiences and coaching products from Kenya to the world.",
+        "sameAs": [
+          "https://instagram.com/enosx_tech",
+          "https://instagram.com/engima_cx"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+254798303978",
+          "contactType": "customer support",
+          "availableLanguage": ["English", "Swahili"]
+        },
+        "knowsAbout": ["Artificial Intelligence", "Web Development", "E-commerce", "Technology"]
+      }) },
     ],
     links: [
       {

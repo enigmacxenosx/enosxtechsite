@@ -60,15 +60,27 @@ function ProductsPage() {
               ))}
             </ul>
 
-            <a
-              href={product.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gradient-brand px-5 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-            >
-              Visit {product.url.replace("https://", "")}
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
+            <div className="mt-8">
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+                Live Preview
+              </h3>
+              <iframe
+                src={product.url}
+                title={`${product.name} live preview`}
+                loading="lazy"
+                className="h-[450px] w-full rounded-xl border border-border bg-background"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+              />
+              <a
+                href={product.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 rounded-lg bg-gradient-brand px-5 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                Open {product.url.replace("https://", "")} in new tab
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
           </article>
         ))}
       </div>

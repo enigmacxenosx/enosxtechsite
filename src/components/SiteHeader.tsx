@@ -1,12 +1,15 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/enosx-logo.png";
+import logo from "@/assets/enosx-logo-new.png";
 import { SITE } from "@/lib/site";
 
 const NAV = [
   { to: "/", label: "Home" },
   { to: "/products", label: "Products" },
+  { to: "/pricing", label: "Pricing" },
+  { to: "/blog", label: "Blog" },
+  { to: "/careers", label: "Careers" },
   { to: "/leadership", label: "Leadership" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
