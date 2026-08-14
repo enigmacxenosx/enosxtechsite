@@ -40,7 +40,7 @@ export const LEADERSHIP: Leader[] = [
     name: "Enosh Yeswa",
     role: "Chief Executive Officer",
     photoKey: "enosh",
-    bio: "Founder of Enosx Technologies (2024). Sets product direction across ENOSX AI, the Enosx Tech Store and ExLover Coach, with one standard: speed is UX.",
+    bio: "Founder and CEO of Enosx Technologies (2024). A visionary tech innovator dedicated to pushing the boundaries of multimodal AI and Windows system integration. Enosh oversees the strategic direction of ENOSX AI, the Enosx Tech Store, and ExLover Coach, operating under the core philosophy that 'Speed is UX'.",
   },
   {
     name: "Fortune",
