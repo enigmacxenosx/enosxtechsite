@@ -1,24 +1,71 @@
-# Enosx Tech Connect
+# Enosx Technologies — Official Website
 
-a want a website for Enosx Technologies the site should  be colorfull and promoting and the whatsap number +254 0798303978 instagram is enosx_tech and engima_cx  and the ai site for the company is enosxai.vercel.app    for the e-commerce site is enosxtech.vercel.app and loving coach is exlover.vercel.app..The founder is Enosh Yeswa the company is founded in 2024 and create a github repo to syn the code and name it enosxtechnologies
+![Enosx Technologies](https://img.shields.io/badge/Enosx-Technologies-0ea5e9) ![Build](https://img.shields.io/badge/build-passing-22c55e)
 
-This project was built with [Lovable](https://lovable.dev).
+The official corporate website of **Enosx Technologies**, a Kenyan technology company founded in 2024 by [Enosh Yeswa](https://github.com/enigmacxenosx). The site presents the company's products, services, leadership, pricing, and careers.
 
-## Build with Lovable
+> **Contact us:** WhatsApp [+254 798 303 978](https://wa.me/254798303978) · Instagram [@enosx_tech](https://instagram.com/enosx_tech) · [@engima_cx](https://instagram.com/engima_cx)
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c2cafcc4-1e85-44e1-8a68-7a977e32c14e).
+## Live Site
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+| Item | Details |
+| :--- | :--- |
+| Production | [enosxtech.vercel.app](https://enosxtech.vercel.app) |
+| Stack | React 19, Vite + TanStack Router, TypeScript, Nitro SSR |
+| Hosting | Vercel |
+| CMS sync | Lovable (push to `main` syncs back) |
 
-## Development
+## Pages
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+| Route | Purpose |
+| :--- | :--- |
+| `/` | Home — hero, products, value proposition |
+| `/products` | Product catalog across the Enosx portfolio |
+| `/pricing` | Service pricing and plans |
+| `/about` | Company story and mission |
+| `/leadership` | Leadership team |
+| `/careers` | Open positions |
+| `/blog` | Company blog |
+| `/contact` | Contact form and social links |
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+## Getting Started
+
+```bash
+git clone https://github.com/enigmacxenosx/enosxtechsite.git
+cd enosxtechsite
+npm install
+npm run dev        # local development
+npm run build      # production build
 ```
+
+### Working with Lovable
+
+This project was built with [Lovable](https://lovable.dev). Every change committed to `main` on GitHub syncs back into the Lovable editor, and prompts made in Lovable are committed straight to this repository — so you can continue developing in either environment.
+
+## Project Structure
+
+```text
+src/
+├── routes/          # TanStack Router page definitions
+├── components/      # Shared UI components
+├── hooks/           # Custom React hooks
+├── integrations/    # External service integrations
+├── lib/             # Utilities
+└── server.ts        # SSR entry (Nitro)
+public/
+├── sitemap.xml      # SEO sitemap
+└── robots.txt       # Crawler directives
+```
+
+## Enosx Portfolio
+
+| Product | URL |
+| :--- | :--- |
+| ENOSX AI | https://enosxai.vercel.app |
+| E-commerce Hub | https://enosxtech-hub.vercel.app |
+| Exlover Coaching | https://exlover.vercel.app |
+| This website | https://enosxtech.vercel.app |
+
+## License
+
+Proprietary — © 2024–2026 Enosx Technologies. All rights reserved.
