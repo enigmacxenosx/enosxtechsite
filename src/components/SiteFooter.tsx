@@ -92,6 +92,54 @@ export function SiteFooter() {
 
         <div>
           <h2 className="font-display text-xs font-bold tracking-widest text-muted-foreground">
+            ECOSYSTEM
+          </h2>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li>
+              <a
+                href="https://enosxai.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                ENOSX AI Assistant
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://enosxtech-hub.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                E-commerce Hub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://exlover.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                ExLover Coaching
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/enigmacxenosx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                GitHub Repositories
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="font-display text-xs font-bold tracking-widest text-muted-foreground">
             CONNECT
           </h2>
           <ul className="mt-4 space-y-2 text-sm">
