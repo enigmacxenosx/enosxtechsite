@@ -7,9 +7,11 @@ export function PageShell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen">
       <SiteHeader />
-      <main>{children}</main>
+      <main className="page-main">
+        {children}
+        <WhatsAppFab />
+      </main>
       <SiteFooter />
-      <WhatsAppFab />
     </div>
   );
 }

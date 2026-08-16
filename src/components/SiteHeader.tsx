@@ -15,7 +15,6 @@ const NAV = [
   { to: "/contact", label: "Contact" },
 ] as const;
 
-
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
@@ -23,13 +22,19 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 glass">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <img src={logo} alt="Enosx Technologies logo" width={36} height={36} className="h-9 w-9" />
+          <img
+            src={logo}
+            alt="Enosx Technologies logo"
+            width={36}
+            height={36}
+            className="h-9 w-9"
+          />
           <span className="font-display text-base font-bold tracking-wide">
             ENOSX<span className="text-gradient-brand"> TECHNOLOGIES</span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
           {NAV.map((item) => (
             <Link
               key={item.to}
@@ -53,7 +58,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="rounded-md border border-border p-2 md:hidden"
+          className="rounded-md border border-border p-2 lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen((v) => !v)}
         >
@@ -62,7 +67,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <nav className="border-t border-border px-5 pb-4 md:hidden" aria-label="Mobile">
+        <nav className="border-t border-border px-5 pb-4 lg:hidden" aria-label="Mobile">
           <div className="flex flex-col gap-1 pt-2">
             {NAV.map((item) => (
               <Link
