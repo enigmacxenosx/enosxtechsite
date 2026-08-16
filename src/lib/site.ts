@@ -49,7 +49,7 @@ export const LEADERSHIP: Leader[] = [
     bio: "Leads search and organic growth across every Enosx product — keyword strategy, technical SEO and content that puts our work in front of the right people.",
   },
   {
-    name: "Tracey Ivone",
+    name: "Tracey Iyvone",
     role: "Leadership Team",
     photoKey: "tracey",
     bio: "Contributes to the leadership team at Enosx Technologies, helping shape thoughtful, high-velocity products that make technology more useful for people and businesses.",
