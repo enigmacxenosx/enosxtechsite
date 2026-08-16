@@ -3,12 +3,13 @@ import { PageShell } from "@/components/PageShell";
 import { LEADERSHIP, SITE } from "@/lib/site";
 import enoshPhoto from "@/assets/leader-enosh.jpg";
 import fortunePhoto from "@/assets/leader-fortune.jpg";
+import traceyPhoto from "@/assets/leader-tracey.svg";
 
-const PHOTOS: Record<"enosh" | "fortune", string> = {
+const PHOTOS: Record<"enosh" | "fortune" | "tracey", string> = {
   enosh: enoshPhoto,
   fortune: fortunePhoto,
+  tracey: traceyPhoto,
 };
-
 
 const TITLE = "Leadership — Enosx Technologies";
 const DESCRIPTION =
@@ -66,7 +67,6 @@ function LeadershipPage() {
               </div>
             </article>
           ))}
-
         </div>
       </section>
 

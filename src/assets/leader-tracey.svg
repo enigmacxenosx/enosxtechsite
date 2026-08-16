@@ -1,0 +1,23 @@
+<svg width="816" height="816" viewBox="0 0 816 816" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="96" y1="72" x2="720" y2="744" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071A2E"/>
+      <stop offset="0.52" stop-color="#123B59"/>
+      <stop offset="1" stop-color="#5A2E77"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(650 150) rotate(136.5) scale(414)">
+      <stop stop-color="#64E7FF" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#64E7FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-60" y="-60" width="936" height="936" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+  <rect width="816" height="816" rx="40" fill="url(#bg)"/>
+  <circle cx="650" cy="150" r="270" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="168" cy="710" r="210" fill="#A855F7" fill-opacity="0.24" filter="url(#blur)"/>
+  <path d="M0 588C130 518 268 532 392 612C514 690 658 690 816 594V816H0V588Z" fill="#050B16" fill-opacity="0.52"/>
+  <circle cx="408" cy="345" r="152" fill="#071A2E" fill-opacity="0.6" stroke="#64E7FF" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="408" y="387" text-anchor="middle" fill="#F4FBFF" font-family="Arial, Helvetica, sans-serif" font-size="132" font-weight="700" letter-spacing="8">TI</text>
+  <text x="408" y="692" text-anchor="middle" fill="#B6EFFF" fill-opacity="0.9" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="8">ENOSX LEADERSHIP</text>
+</svg>
