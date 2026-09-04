@@ -1,70 +1,58 @@
 # Enosx Technologies — Official Website
 
-![Enosx Technologies](https://img.shields.io/badge/Enosx-Technologies-0ea5e9) ![Build](https://img.shields.io/badge/build-passing-22c55e)
+The official corporate website of [Enosx Technologies](https://enosxtech.vercel.app), a Kenyan technology company founded in 2024 by [Enosh Yeswa](https://github.com/enigmacxenosx). It presents the company’s products, services, leadership, pricing, careers, and blog.
 
-The official corporate website of **Enosx Technologies**, a Kenyan technology company founded in 2024 by [Enosh Yeswa](https://github.com/enigmacxenosx). The site presents the company's products, services, leadership, pricing, and careers.
+[![Live site](https://img.shields.io/badge/live-enosxtech.vercel.app-0ea5e9)](https://enosxtech.vercel.app) [![Hosting](https://img.shields.io/badge/hosting-Vercel-black)](https://vercel.com/)
 
-> **Contact us:** WhatsApp [+254 798 303 978](https://wa.me/254798303978) · Instagram [@enosx_tech](https://instagram.com/enosx_tech) · [@engima_cx](https://instagram.com/engima_cx)
-
-## Live Site
-
-| Item | Details |
-| :--- | :--- |
-| Production | [enosxtech.vercel.app](https://enosxtech.vercel.app) |
-| Stack | React 19, Vite + TanStack Router, TypeScript, Nitro SSR |
-| Hosting | Vercel |
-| CMS sync | Lovable (push to `main` syncs back) |
-
-## Pages
+## Site sections
 
 | Route | Purpose |
-| :--- | :--- |
-| `/` | Home — hero, products, value proposition |
-| `/products` | Product catalog across the Enosx portfolio |
-| `/pricing` | Service pricing and plans |
+|---|---|
+| `/` | Home and value proposition |
+| `/products` | Enosx product catalogue |
+| `/pricing` | Services and plans |
 | `/about` | Company story and mission |
 | `/leadership` | Leadership team |
-| `/careers` | Open positions |
-| `/blog` | Company blog |
+| `/careers` | Open opportunities |
+| `/blog` | Company articles |
 | `/contact` | Contact form and social links |
 
-## Getting Started
+## Technology
+
+React 19, Vite, TanStack Router, TypeScript, Nitro SSR, and Vercel. The project was created with [Lovable](https://lovable.dev); pushes to `main` synchronize with the Lovable editor.
+
+## Getting started
 
 ```bash
 git clone https://github.com/enigmacxenosx/enosxtechsite.git
 cd enosxtechsite
 npm install
-npm run dev        # local development
-npm run build      # production build
+npm run dev
+npm run build
 ```
 
-### Working with Lovable
+## Project structure
 
-This project was built with [Lovable](https://lovable.dev). Every change committed to `main` on GitHub syncs back into the Lovable editor, and prompts made in Lovable are committed straight to this repository — so you can continue developing in either environment.
+| Path | Purpose |
+|---|---|
+| `src/routes/` | TanStack Router route definitions |
+| `src/components/` | Shared interface components |
+| `src/hooks/` | React hooks |
+| `src/integrations/` | External integrations |
+| `src/lib/` | Utilities |
+| `server.ts` | Nitro SSR entry point |
+| `public/` | Sitemap, robots directives, and static assets |
 
-## Project Structure
+## Portfolio
 
-```text
-src/
-├── routes/          # TanStack Router page definitions
-├── components/      # Shared UI components
-├── hooks/           # Custom React hooks
-├── integrations/    # External service integrations
-├── lib/             # Utilities
-└── server.ts        # SSR entry (Nitro)
-public/
-├── sitemap.xml      # SEO sitemap
-└── robots.txt       # Crawler directives
-```
+- [ENOSX AI](https://enosxai.vercel.app)
+- [E-commerce Hub](https://enosxtech-hub.vercel.app)
+- [Enosh Blog](https://github.com/enigmacxenosx/enosh-blog)
+- [ExLover Coach](https://exlover.vercel.app)
 
-## Enosx Portfolio
+## Contact
 
-| Product | URL |
-| :--- | :--- |
-| ENOSX AI | https://enosxai.vercel.app |
-| E-commerce Hub | https://enosxtech-hub.vercel.app |
-| Exlover Coaching | https://exlover.vercel.app |
-| This website | https://enosxtech.vercel.app |
+WhatsApp [+254 798 303 978](https://wa.me/254798303978) · Instagram [@enosx_tech](https://instagram.com/enosx_tech) · Email [Enosxtech@gmail.com](mailto:Enosxtech@gmail.com)
 
 ## License
 
