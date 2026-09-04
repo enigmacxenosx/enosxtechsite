@@ -47,7 +47,7 @@ export function BackgroundMusic() {
 
   return (
     <>
-      <audio ref={audioRef} src={trackAsset.url} loop preload="auto" autoPlay />
+      <audio ref={audioRef} src={TRACK_URL} loop preload="auto" autoPlay />
       <button
         type="button"
         onClick={toggle}
