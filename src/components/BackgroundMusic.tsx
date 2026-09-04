@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
-import trackAsset from "@/assets/fein.mp3.asset.json";
+const TRACK_URL = "/fein.mp3";
 
 export function BackgroundMusic() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -47,7 +47,7 @@ export function BackgroundMusic() {
 
   return (
     <>
-      <audio ref={audioRef} src={trackAsset.url} loop preload="auto" autoPlay />
+      <audio ref={audioRef} src={TRACK_URL} loop preload="auto" autoPlay />
       <button
         type="button"
         onClick={toggle}
