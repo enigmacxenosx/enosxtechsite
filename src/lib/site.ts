@@ -125,8 +125,71 @@ export const PRODUCTS: Product[] = [
       "Private coach room that tracks your reflections",
     ],
   },
-
+  {
+    slug: "enosx-hub",
+    name: "Enosx E-commerce Hub",
+    kicker: "Compare, watch, buy — all in one place",
+    blurb:
+      "The full shopping experience built on top of our Kenyan marketplace aggregator: product pages, watchlists, cart, checkout and order tracking across Jumia, Kilimall and Jiji.",
+    url: "https://enosxtech-hub.vercel.app",
+    accent: "cyan",
+    features: [
+      "Unified product search across supported marketplaces",
+      "Side-by-side price and specification comparison",
+      "Product pages with image galleries and full specs",
+      "Watchlists, cart and secure checkout",
+      "Accounts and order tracking",
+    ],
+  },
+  {
+    slug: "enosh-browser",
+    name: "Enosh Browser",
+    kicker: "A calm, source-first browser workspace",
+    blurb:
+      "A quieter way to research. Enosh Browser keeps your sources, trails and spaces in one workspace, with ENOSX AI built right in — on the web or as a desktop app.",
+    url: "https://enosh-browser.vercel.app",
+    accent: "purple",
+    features: [
+      "Source trails, saved sources and spaces",
+      "Command palette for instant navigation",
+      "Protection report and workspace tools built in",
+      "ENOSX AI workspace embedded",
+      "Desktop installers for Windows, macOS and Linux",
+    ],
+  },
+  {
+    slug: "enosh-blog",
+    name: "Enosh Blog",
+    kicker: "Editorial Noir publishing",
+    blurb:
+      "The personal publishing platform of Enosh Yeswa — dark, typographic and magazine-inspired writing on technology, building and the Enosx journey.",
+    url: "https://enosh-blog.vercel.app",
+    accent: "crimson",
+    features: [
+      "Editorial Noir design with serif-forward typography",
+      "Magazine-style article listing and reading pages",
+      "Case-study layouts for deeper stories",
+      "Fast, server-rendered content",
+    ],
+  },
+  {
+    slug: "exboot",
+    name: "Exboot",
+    kicker: "Windows bootable-media creator",
+    blurb:
+      "A desktop utility for making bootable Windows installation drives from a genuine ISO — with clear, guided steps and safety confirmations before anything is erased.",
+    url: "https://github.com/enigmacxenosx/Exboot",
+    accent: "cyan",
+    features: [
+      "Create Windows install media for UEFI and Legacy BIOS",
+      "Multi-boot USB drives via Ventoy",
+      "Automatic splitting of large files for FAT32 drives",
+      "Optional Windows 11 TPM and Secure Boot settings",
+      "Verified update checks with SHA-256 checks",
+    ],
+  },
 ];
+
 
 export const PERSONALITY_MODES = [
   {
