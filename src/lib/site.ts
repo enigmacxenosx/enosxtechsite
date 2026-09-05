@@ -82,11 +82,13 @@ export const PRODUCTS: Product[] = [
       "Context-aware messaging that reads your active app",
       "Drag-and-drop file and code analysis",
       "Native GitHub integration and code review",
-      "Voice interface with speech-to-text and text-to-speech",
+      "Voice replies powered by ElevenLabs speech synthesis",
+      "Sign in with GitHub for a connected developer workflow",
       "Persistent memory bank across sessions",
       "Web intelligence with real-time search and deep scraping",
       "Imagine Mode for instant image generation",
       "Document engine exporting to PDF and Markdown",
+
     ],
   },
   {
