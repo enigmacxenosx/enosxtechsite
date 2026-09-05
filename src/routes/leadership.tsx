@@ -13,7 +13,7 @@ const PHOTOS: Record<"enosh" | "fortune" | "tracey", string> = {
 
 const TITLE = "Leadership — Enosx Technologies";
 const DESCRIPTION =
-  "Meet the leadership team of Enosx Technologies, led by founder and CEO Enosh Yeswa, building multimodal AI, commerce and coaching products.";
+  "Meet the leadership team of Enosx Technologies, a Kenya-based product studio building AI, web platforms, commerce, browsing, publishing and desktop utilities.";
 
 export const Route = createFileRoute("/leadership")({
   head: () => ({
@@ -40,8 +40,8 @@ function LeadershipPage() {
             Our <span className="text-gradient-brand">leadership</span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            The people steering {SITE.name} — small team, high velocity, one obsession:{" "}
-            <strong className="text-foreground">{SITE.motto}</strong>
+            The people steering {SITE.name} — a small product team building with focus, craft and
+            one obsession: <strong className="text-foreground">{SITE.motto}</strong>
           </p>
         </div>
       </section>
@@ -74,8 +74,9 @@ function LeadershipPage() {
         <div className="glass rounded-2xl p-8">
           <h2 className="text-2xl font-bold">Open leadership roles</h2>
           <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-            We're still growing the leadership bench. If you build fast and care about craft, reach
-            out on WhatsApp — we read every message.
+            We're growing the team behind the ecosystem. If you build fast, care about craft and
+            want to work on useful products from Kenya, reach out on WhatsApp — we read every
+            message.
           </p>
           <a
             href={SITE.whatsappUrl}

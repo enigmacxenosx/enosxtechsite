@@ -24,12 +24,36 @@ export const Route = createFileRoute("/")({
 });
 
 const CAPABILITIES = [
-  { icon: Terminal, title: "God Mode", desc: "A terminal-grade command surface for instant, low-level execution." },
-  { icon: Cpu, title: "Context-aware", desc: "Detects your active app and tailors every suggestion to it." },
-  { icon: Mic, title: "Voice interface", desc: "Full speech-to-text and text-to-speech, hands-free by design." },
-  { icon: Github, title: "GitHub native", desc: "Browse repos, read branches, review and generate code live." },
-  { icon: Globe, title: "Web intelligence", desc: "Real-time search and deep scraping for factual precision." },
-  { icon: Sparkles, title: "Imagine Mode", desc: "Instant artistic image generation inside the workspace." },
+  {
+    icon: Terminal,
+    title: "God Mode",
+    desc: "A terminal-grade command surface for instant, low-level execution.",
+  },
+  {
+    icon: Cpu,
+    title: "Context-aware",
+    desc: "Detects your active app and tailors every suggestion to it.",
+  },
+  {
+    icon: Mic,
+    title: "Voice interface",
+    desc: "Full speech-to-text and text-to-speech, hands-free by design.",
+  },
+  {
+    icon: Github,
+    title: "GitHub native",
+    desc: "Browse repos, read branches, review and generate code live.",
+  },
+  {
+    icon: Globe,
+    title: "Web intelligence",
+    desc: "Real-time search and deep scraping for factual precision.",
+  },
+  {
+    icon: Sparkles,
+    title: "Imagine Mode",
+    desc: "Instant artistic image generation inside the workspace.",
+  },
 ];
 
 function Index() {
@@ -48,7 +72,8 @@ function Index() {
             </h1>
             <p className="mt-5 text-lg text-muted-foreground md:text-xl">
               {SITE.tagline} We build useful software across AI, privacy-first browsing, commerce,
-              publishing and developer tools — with one obsession: <strong className="text-foreground">{SITE.motto}</strong>
+              publishing and developer tools — with one obsession:{" "}
+              <strong className="text-foreground">{SITE.motto}</strong>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -101,8 +126,9 @@ function Index() {
       <section className="mx-auto max-w-6xl px-5 pt-24">
         <h2 className="text-3xl font-bold md:text-4xl">What we build</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          One connected portfolio, from multimodal AI and source-first browsing to commerce, publishing
-          and practical desktop utilities. Explore the products and projects shaping the Enosx ecosystem.
+          One connected portfolio, from multimodal AI and source-first browsing to commerce,
+          publishing and practical desktop utilities. Explore the products and projects shaping the
+          Enosx ecosystem.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {PRODUCTS.map((p) => (
@@ -193,6 +219,5 @@ function Index() {
         <NewsletterSignup />
       </section>
     </PageShell>
-
   );
 }

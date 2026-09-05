@@ -13,7 +13,7 @@ const PHOTOS: Record<"enosh" | "fortune" | "tracey", string> = {
 
 const TITLE = "About Enosx Technologies — Our Story, Mission & Team";
 const DESCRIPTION =
-  "How Enosx Technologies grew from a 2024 idea by Enosh Yeswa into a studio building ENOSX AI, the Tech Store, ExLover Coach and more. Our mission, values and team.";
+  "How Enosx Technologies grew from a 2024 idea by Enosh Yeswa into a Kenya-based product studio building AI, web platforms, commerce, browsing and desktop utilities.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -43,13 +43,13 @@ const TIMELINE = [
   },
   {
     year: "2025",
-    title: "Commerce and coaching",
-    desc: "The Enosx Tech Store launches as Kenya's electronics aggregator across Jumia, Kilimall and Jiji, and ExLover Coach opens as a private space for honest relationship conversations.",
+    title: "Commerce and connected products",
+    desc: "The ecosystem expands into Kenyan electronics discovery, private reflection tools and web products that turn focused ideas into usable experiences.",
   },
   {
     year: "2026",
-    title: "A full product studio",
-    desc: "The E-commerce Hub, Enosh Browser, Enosh Blog and Exboot join the family, and a growing WhatsApp community sits at the centre of it all.",
+    title: "A broader product ecosystem",
+    desc: "The E-commerce Hub, Enosh Browser, Enosh Blog and Exboot join ENOSX AI as the portfolio grows across AI, commerce, research, publishing and practical desktop software.",
   },
 ];
 
@@ -84,8 +84,8 @@ function AboutPage() {
             About <span className="text-gradient-brand">Enosx Technologies</span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            We build multimodal AI, commerce and coaching products for people who want technology
-            to keep up with them. {SITE.tagline}
+            We build practical software across AI, web platforms, commerce, research, publishing and
+            desktop utilities for people who want technology to keep up with them. {SITE.tagline}
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
@@ -107,17 +107,17 @@ function AboutPage() {
           <article className="glass rounded-2xl p-8">
             <h2 className="text-2xl font-bold">Our mission</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              To make everyday software feel instant and genuinely helpful — assistants that work
-              with your operating system instead of beside it, shopping tools that save real money,
-              and products that respect the people using them.
+              To turn ambitious ideas into focused products that are fast, useful and clear — from
+              AI workflows and source-first research tools to commerce experiences and dependable
+              desktop utilities.
             </p>
           </article>
           <article className="glass rounded-2xl p-8">
             <h2 className="text-2xl font-bold">Our story</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
               Enosx Technologies began in {SITE.founded} as one developer's answer to slow, shallow
-              tools. What started as a single assistant is now a small studio shipping AI, commerce
-              and coaching products, guided by one line: “{SITE.motto}”
+              tools. It is now a Kenya-based product studio shipping AI, web, commerce, publishing
+              and desktop projects, guided by one line: “{SITE.motto}”
             </p>
           </article>
         </div>
@@ -155,7 +155,7 @@ function AboutPage() {
       <section className="mx-auto max-w-6xl px-5 pt-20">
         <h2 className="text-3xl font-bold">The team</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          A small team behind every Enosx product.
+          A small team building a connected portfolio of products and experiments.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LEADERSHIP.map((leader) => (

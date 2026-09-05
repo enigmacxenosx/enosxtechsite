@@ -7,9 +7,17 @@ export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
       { title: "Careers — Enosx Technologies" },
-      { name: "description", content: "Join the Enosx Technologies team. We're hiring frontend developers, backend engineers, AI/ML engineers, and more." },
+      {
+        name: "description",
+        content:
+          "Join Enosx Technologies as we build practical products across AI, web platforms, commerce, browsing, publishing and desktop utilities from Kenya.",
+      },
       { property: "og:title", content: "Careers — Enosx Technologies" },
-      { property: "og:description", content: "Join the Enosx Technologies team. We're hiring frontend developers, backend engineers, AI/ML engineers, and more." },
+      {
+        property: "og:description",
+        content:
+          "Join Enosx Technologies as we build practical products across AI, web platforms, commerce, browsing, publishing and desktop utilities from Kenya.",
+      },
     ],
   }),
   component: CareersPage,
@@ -23,8 +31,9 @@ function CareersPage() {
           <span className="text-gradient-brand">Join</span> Our Team
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          We're building the future of AI, commerce, and coaching from Kenya.
-          If you're passionate about technology and speed, we want to hear from you.
+          We're building practical products across AI, web platforms, commerce, browsing, publishing
+          and desktop utilities from Kenya. If you care about useful software and speed, we want to
+          hear from you.
         </p>
         <a
           href={SITE.whatsappUrl}

@@ -7,9 +7,17 @@ export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
       { title: "Blog — Enosx Technologies" },
-      { name: "description", content: "Latest news, insights, and engineering updates from Enosx Technologies." },
+      {
+        name: "description",
+        content:
+          "Build logs, product thinking and engineering notes from Enosx Technologies in Kenya.",
+      },
       { property: "og:title", content: "Blog — Enosx Technologies" },
-      { property: "og:description", content: "Latest news, insights, and engineering updates from Enosx Technologies." },
+      {
+        property: "og:description",
+        content:
+          "Build logs, product thinking and engineering notes from Enosx Technologies in Kenya.",
+      },
     ],
   }),
   component: BlogPage,
@@ -31,7 +39,7 @@ function BlogPage() {
           <span className="text-gradient-brand">Blog</span>
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          News, insights, and engineering updates from the Enosx team.
+          Build logs, product thinking and engineering notes from the team building Enosx in Kenya.
         </p>
       </section>
 
@@ -58,7 +66,7 @@ function BlogPage() {
                 to="/"
                 className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-brand hover:underline"
               >
-                Read more <ArrowRight className="h-3.5 w-3.5" />
+                Explore the ecosystem <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </article>
           ))}

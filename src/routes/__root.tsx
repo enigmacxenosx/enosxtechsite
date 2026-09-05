@@ -13,7 +13,6 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Toaster } from "@/components/ui/sonner";
 
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -83,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Enosx Technologies builds multimodal AI, commerce and coaching products. Speed is UX.",
+          "Enosx Technologies builds practical products across AI, web platforms, commerce, browsing, publishing and desktop utilities from Kenya.",
       },
       { name: "author", content: "Enosh Yeswa" },
       { property: "og:site_name", content: "Enosx Technologies" },
@@ -91,32 +90,48 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:locale", content: "en_US" },
       { property: "og:url", content: "https://enosxtechnologies.vercel.app" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "keywords", content: "Enosx Technologies, ENOSX AI, AI assistant, e-commerce, tech store, Kenya, Kakamega, web development, coaching" },
+      {
+        name: "keywords",
+        content:
+          "Enosx Technologies, ENOSX AI, Enosh Browser, e-commerce, Kenya, product studio, web platforms, desktop utilities, Exboot",
+      },
       { name: "robots", content: "index, follow" },
-      { type: "application/ld+json", innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Enosx Technologies",
-        "url": "https://enosxtechnologies.vercel.app",
-        "logo": "https://enosxtechnologies.vercel.app/favicon.png",
-        "founder": {
-          "@type": "Person",
-          "name": "Enosh Yeswa"
-        },
-        "foundingDate": "2024",
-        "description": "Enosx Technologies builds multimodal AI assistants, commerce experiences and coaching products from Kenya to the world.",
-        "sameAs": [
-          "https://instagram.com/enosx_tech",
-          "https://instagram.com/engima_cx"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+254798303978",
-          "contactType": "customer support",
-          "availableLanguage": ["English", "Swahili"]
-        },
-        "knowsAbout": ["Artificial Intelligence", "Web Development", "E-commerce", "Technology"]
-      }) },
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Enosx Technologies",
+          url: "https://enosxtechnologies.vercel.app",
+          logo: "https://enosxtechnologies.vercel.app/favicon.png",
+          founder: {
+            "@type": "Person",
+            name: "Enosh Yeswa",
+          },
+          foundingDate: "2024",
+          description:
+            "Enosx Technologies is a Kenya-based product studio building AI, web platforms, commerce, browsing, publishing and desktop utilities.",
+          sameAs: [
+            "https://instagram.com/enosx_tech",
+            "https://instagram.com/engima_cx",
+            "https://github.com/enigmacxenosx",
+          ],
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+254798303978",
+            contactType: "customer support",
+            availableLanguage: ["English", "Swahili"],
+          },
+          knowsAbout: [
+            "Artificial Intelligence",
+            "Web Development",
+            "E-commerce",
+            "Privacy-first browsing",
+            "Desktop software",
+            "Product engineering",
+          ],
+        }),
+      },
     ],
     links: [
       {
@@ -162,6 +177,5 @@ function RootComponent() {
       <Outlet />
       <Toaster />
     </QueryClientProvider>
-
   );
 }

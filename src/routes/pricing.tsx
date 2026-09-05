@@ -7,9 +7,17 @@ export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
       { title: "Pricing — Enosx Technologies" },
-      { name: "description", content: "Choose the plan that fits your needs. From free access to enterprise solutions, ENOSX AI has you covered." },
+      {
+        name: "description",
+        content:
+          "Explore current ENOSX AI access options, from a free starting point to tailored conversations for teams and integrations.",
+      },
       { property: "og:title", content: "Pricing — Enosx Technologies" },
-      { property: "og:description", content: "Choose the plan that fits your needs. From free access to enterprise solutions, ENOSX AI has you covered." },
+      {
+        property: "og:description",
+        content:
+          "Explore current ENOSX AI access options, from a free starting point to tailored conversations for teams and integrations.",
+      },
     ],
   }),
   component: PricingPage,
@@ -23,7 +31,8 @@ function PricingPage() {
           <span className="text-gradient-brand">Pricing</span>
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Choose the plan that fits your needs. Start free, upgrade anytime.
+          Start with the current ENOSX AI access options. For product integrations or team
+          workflows, contact the Enosx team and we can discuss the right fit.
         </p>
       </section>
 
@@ -33,9 +42,7 @@ function PricingPage() {
             <div
               key={plan.name}
               className={`glass rounded-xl p-6 flex flex-col ${
-                plan.featured
-                  ? "ring-2 ring-cyan-brand shadow-[var(--shadow-glow-cyan)]"
-                  : ""
+                plan.featured ? "ring-2 ring-cyan-brand shadow-[var(--shadow-glow-cyan)]" : ""
               }`}
             >
               {plan.featured && (
