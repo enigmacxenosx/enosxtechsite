@@ -3,9 +3,9 @@ import { ArrowUpRight, Check } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { PRODUCTS } from "@/lib/site";
 
-const TITLE = "Products — ENOSX AI, Enosx Tech Store & ExLover Coach";
+const TITLE = "Products — Enosx Technologies Ecosystem";
 const DESCRIPTION =
-  "Explore the three live Enosx Technologies platforms: ENOSX AI multimodal assistant, the Enosx Tech Store and ExLover relationship coach.";
+  "Explore the Enosx Technologies portfolio: multimodal AI, source-first browsing, commerce, publishing and practical desktop utilities.";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -34,8 +34,8 @@ function ProductsPage() {
             Our <span className="text-gradient-brand">products</span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Three platforms, all live and in active development. Everything is built in-house with
-            the same Aero-Glass design language and speed-first engineering.
+            Explore the working portfolio behind Enosx Technologies. Each project solves a different
+            problem, but they share the same speed-first approach to useful, focused software.
           </p>
         </div>
       </section>
@@ -62,7 +62,7 @@ function ProductsPage() {
 
             <div className="mt-8">
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-                Live Preview
+                Project preview
               </h3>
               <iframe
                 src={product.url}

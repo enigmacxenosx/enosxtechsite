@@ -7,9 +7,9 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { PRODUCTS, SITE, TESTIMONIALS } from "@/lib/site";
 import heroImage from "@/assets/hero-aero.jpg";
 
-const TITLE = "Enosx Technologies — Multimodal AI, Commerce & Coaching";
+const TITLE = "Enosx Technologies — AI, Browsing, Commerce & Developer Tools";
 const DESCRIPTION =
-  "Enosx Technologies builds ENOSX AI, the Enosx Tech Store and ExLover Coach. Founded in 2024 by Enosh Yeswa. Speed is UX.";
+  "Enosx Technologies builds practical software across multimodal AI, privacy-first browsing, commerce, publishing and desktop utilities. Founded in Kenya in 2024.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,8 +47,8 @@ function Index() {
               <span className="text-gradient-brand">Enosx</span> Technologies
             </h1>
             <p className="mt-5 text-lg text-muted-foreground md:text-xl">
-              {SITE.tagline} We build multimodal AI assistants, commerce experiences and coaching
-              products with one obsession — <strong className="text-foreground">{SITE.motto}</strong>
+              {SITE.tagline} We build useful software across AI, privacy-first browsing, commerce,
+              publishing and developer tools — with one obsession: <strong className="text-foreground">{SITE.motto}</strong>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -82,10 +82,10 @@ function Index() {
       <section className="mx-auto max-w-6xl px-5">
         <div className="glass grid grid-cols-2 gap-6 rounded-2xl p-6 md:grid-cols-4">
           {[
-            ["3", "Live products"],
-            ["7", "AI operating tiers"],
-            ["4", "Personality modes"],
-            ["24/7", "WhatsApp support"],
+            ["7", "Products in the ecosystem"],
+            ["3", "Desktop platforms"],
+            ["5", "Core repositories"],
+            ["2024", "Founded in Kenya"],
           ].map(([value, label]) => (
             <div key={label}>
               <div className="font-display text-3xl font-bold text-gradient-brand">{value}</div>
@@ -101,8 +101,8 @@ function Index() {
       <section className="mx-auto max-w-6xl px-5 pt-24">
         <h2 className="text-3xl font-bold md:text-4xl">What we build</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          Three live platforms, one design language. Every product is online right now — tap a card
-          to open it.
+          One connected portfolio, from multimodal AI and source-first browsing to commerce, publishing
+          and practical desktop utilities. Explore the products and projects shaping the Enosx ecosystem.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {PRODUCTS.map((p) => (
@@ -114,7 +114,7 @@ function Index() {
       {/* Capabilities */}
       <section className="mx-auto max-w-6xl px-5 pt-24">
         <h2 className="text-3xl font-bold md:text-4xl">
-          Built on <span className="text-gradient-brand">OS-level</span> intelligence
+          Built for <span className="text-gradient-brand">useful momentum</span>
         </h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {CAPABILITIES.map(({ icon: Icon, title, desc }) => (
@@ -154,9 +154,10 @@ function Index() {
             Founded by <span className="text-gradient-brand">{SITE.founder}</span>
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Since {SITE.founded}, Enosx Technologies has been shipping software that treats latency
-            as a design flaw. From an AI assistant that lives in your OS to a storefront and a
-            coaching companion, everything we release is fast, opinionated and beautiful.
+            Since {SITE.founded}, Enosx Technologies has been turning ambitious ideas into working
+            products. The portfolio spans ENOSX AI, Enosh Browser, commerce experiences, editorial
+            tools and focused utilities — all shaped by the belief that speed, clarity and trust
+            should be part of the product, not an afterthought.
           </p>
           <Link
             to="/about"
