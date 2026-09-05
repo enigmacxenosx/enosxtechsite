@@ -92,33 +92,38 @@ export const PRODUCTS: Product[] = [
   {
     slug: "enosx-store",
     name: "Enosx Tech Store",
-    kicker: "E-commerce",
+    kicker: "Kenya's #1 electronics aggregator",
     blurb:
-      "Our online storefront for tech products and digital services — fast browsing, clean checkout, built and maintained in-house.",
+      "Search Jumia, Kilimall and Jiji at the same time. One query brings back electronics from every major Kenyan platform so you can compare prices and grab the best deal.",
     url: "https://enosxtech.vercel.app",
     accent: "purple",
     features: [
-      "Curated tech product catalogue",
+      "Unified search across Jumia, Kilimall and Jiji",
+      "Filter by category: smartphones, laptops, headphones, tablets, accessories",
+      "Side-by-side price comparison across platforms",
+      "Featured electronics and trending deals",
       "Fast, mobile-first browsing experience",
-      "Streamlined checkout flow",
       "Direct WhatsApp support on every order",
     ],
   },
   {
     slug: "exlover",
     name: "ExLover Coach",
-    kicker: "Loving & relationship coaching",
+    kicker: "AI relationship coach — love, with clarity",
     blurb:
-      "An AI-guided coach for relationships — thoughtful prompts, honest reflection, and practical advice for real conversations.",
+      "A private space for honest conversations. ExLover helps you pause, understand what you feel, and respond from a steadier place — no judgement, no perfect answers, just a little more clarity.",
     url: "https://exlover.vercel.app",
     accent: "crimson",
     features: [
-      "Guided conversation coaching",
-      "Personalised advice and reflection prompts",
-      "Private, judgement-free sessions",
-      "Available anywhere, any time",
+      "Clarity: untangle the signal from the story and name what matters",
+      "Communication: turn a difficult feeling into an honest, kind conversation",
+      "Boundaries: find language that protects your peace",
+      "Healing: make space for grief, growth and the next small choice",
+      "A daily gentle prompt to reflect on",
+      "Private coach room that tracks your reflections",
     ],
   },
+
 ];
 
 export const PERSONALITY_MODES = [
