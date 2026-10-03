@@ -4,11 +4,13 @@ import { LEADERSHIP, OPERATIONAL_TIERS, PERSONALITY_MODES, PRODUCTS, SITE } from
 import enoshPhoto from "@/assets/leader-enosh.jpg";
 import fortunePhoto from "@/assets/leader-fortune.jpg";
 import traceyPhoto from "@/assets/leader-tracey.svg";
+import gracePhoto from "@/assets/leader-grace.svg";
 
-const PHOTOS: Record<"enosh" | "fortune" | "tracey", string> = {
+const PHOTOS: Record<"enosh" | "fortune" | "tracey" | "grace", string> = {
   enosh: enoshPhoto,
   fortune: fortunePhoto,
   tracey: traceyPhoto,
+  grace: gracePhoto,
 };
 
 const TITLE = "About Enosx Technologies — Our Story, Mission & Team";

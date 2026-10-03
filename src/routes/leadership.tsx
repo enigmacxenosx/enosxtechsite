@@ -4,11 +4,13 @@ import { LEADERSHIP, SITE } from "@/lib/site";
 import enoshPhoto from "@/assets/leader-enosh.jpg";
 import fortunePhoto from "@/assets/leader-fortune.jpg";
 import traceyPhoto from "@/assets/leader-tracey.svg";
+import gracePhoto from "@/assets/leader-grace.svg";
 
-const PHOTOS: Record<"enosh" | "fortune" | "tracey", string> = {
+const PHOTOS: Record<"enosh" | "fortune" | "tracey" | "grace", string> = {
   enosh: enoshPhoto,
   fortune: fortunePhoto,
   tracey: traceyPhoto,
+  grace: gracePhoto,
 };
 
 const TITLE = "Leadership — Enosx Technologies";
@@ -52,7 +54,7 @@ function LeadershipPage() {
             <article key={l.name} className="glass overflow-hidden rounded-2xl">
               <img
                 src={PHOTOS[l.photoKey]}
-                alt={`Portrait of ${l.name}, ${l.role} at ${SITE.name}`}
+                alt={`${l.name}, ${l.role} at ${SITE.name}`}
                 width={816}
                 height={816}
                 loading="lazy"

@@ -32,7 +32,7 @@ export const WHATSAPP_GROUPS = [
 export type Leader = {
   name: string;
   role: string;
-  photoKey: "enosh" | "fortune" | "tracey";
+  photoKey: "enosh" | "fortune" | "tracey" | "grace";
   bio: string;
 };
 
@@ -54,6 +54,12 @@ export const LEADERSHIP: Leader[] = [
     role: "Leadership Team",
     photoKey: "tracey",
     bio: "Contributes to the leadership team at Enosx Technologies, helping shape thoughtful products that make technology more useful for people and businesses.",
+  },
+  {
+    name: "Grace Wangare",
+    role: "Team Member",
+    photoKey: "grace",
+    bio: "Part of the team behind Enosx Technologies.",
   },
 ];
 
