@@ -1,3 +1,4 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
@@ -8,14 +9,12 @@ const DESCRIPTION =
   "Explore the Enosx Technologies portfolio: multimodal AI, source-first browsing, commerce, publishing and practical desktop utilities.";
 
 export const Route = createFileRoute("/products")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-    ],
-  }),
+  head: () =>
+    createPageHead(
+      "Products — Enosx Technologies Ecosystem",
+      "Explore the Enosx Technologies portfolio: multimodal AI, source-first browsing, commerce, publishing and practical desktop utilities.",
+      "/products",
+    ),
   component: ProductsPage,
 });
 

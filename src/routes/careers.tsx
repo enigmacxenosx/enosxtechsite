@@ -1,25 +1,16 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { MapPin, Briefcase, CheckCircle } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { CAREERS, SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/careers")({
-  head: () => ({
-    meta: [
-      { title: "Careers — Enosx Technologies" },
-      {
-        name: "description",
-        content:
-          "Join Enosx Technologies as we build practical products across AI, web platforms, commerce, browsing, publishing and desktop utilities from Kenya.",
-      },
-      { property: "og:title", content: "Careers — Enosx Technologies" },
-      {
-        property: "og:description",
-        content:
-          "Join Enosx Technologies as we build practical products across AI, web platforms, commerce, browsing, publishing and desktop utilities from Kenya.",
-      },
-    ],
-  }),
+  head: () =>
+    createPageHead(
+      "Careers — Enosx Technologies",
+      "Join Enosx Technologies as we build practical products across AI, web platforms, commerce, browsing, publishing and desktop utilities from Kenya.",
+      "/careers",
+    ),
   component: CareersPage,
 });
 

@@ -1,25 +1,16 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Calendar, Tag } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { BLOG_POSTS } from "@/lib/site";
 
 export const Route = createFileRoute("/blog")({
-  head: () => ({
-    meta: [
-      { title: "Blog — Enosx Technologies" },
-      {
-        name: "description",
-        content:
-          "Build logs, product thinking and engineering notes from Enosx Technologies in Kenya.",
-      },
-      { property: "og:title", content: "Blog — Enosx Technologies" },
-      {
-        property: "og:description",
-        content:
-          "Build logs, product thinking and engineering notes from Enosx Technologies in Kenya.",
-      },
-    ],
-  }),
+  head: () =>
+    createPageHead(
+      "Blog — Enosx Technologies",
+      "Build logs, product thinking and engineering notes from Enosx Technologies in Kenya.",
+      "/blog",
+    ),
   component: BlogPage,
 });
 

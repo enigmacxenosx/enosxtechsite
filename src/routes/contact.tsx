@@ -1,3 +1,4 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Instagram, Mail, MessageCircle, Users } from "lucide-react";
@@ -6,20 +7,17 @@ import { SITE, WHATSAPP_GROUPS } from "@/lib/site";
 
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
-
 const TITLE = "Contact Enosx Technologies — WhatsApp & Instagram";
 const DESCRIPTION =
   "Reach Enosx Technologies on WhatsApp at +254 798 303 978, or on Instagram @enosx_tech and @engima_cx. We usually reply within the hour.";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-    ],
-  }),
+  head: () =>
+    createPageHead(
+      "Contact Enosx Technologies — WhatsApp & Instagram",
+      "Reach Enosx Technologies on WhatsApp at +254 798 303 978, or on Instagram @enosx_tech and @engima_cx. We usually reply within the hour.",
+      "/contact",
+    ),
   component: ContactPage,
 });
 
@@ -159,8 +157,6 @@ function ContactPage() {
       <section className="mx-auto max-w-6xl px-5 pt-16">
         <NewsletterSignup />
       </section>
-
-
     </PageShell>
   );
 }

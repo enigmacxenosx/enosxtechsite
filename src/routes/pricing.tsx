@@ -1,25 +1,16 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { Check } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { PRICING_PLANS, SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/pricing")({
-  head: () => ({
-    meta: [
-      { title: "Pricing — Enosx Technologies" },
-      {
-        name: "description",
-        content:
-          "Explore current ENOSX AI access options, from a free starting point to tailored conversations for teams and integrations.",
-      },
-      { property: "og:title", content: "Pricing — Enosx Technologies" },
-      {
-        property: "og:description",
-        content:
-          "Explore current ENOSX AI access options, from a free starting point to tailored conversations for teams and integrations.",
-      },
-    ],
-  }),
+  head: () =>
+    createPageHead(
+      "Pricing — Enosx Technologies",
+      "Explore current ENOSX AI access options, from a free starting point to tailored conversations for teams and integrations.",
+      "/pricing",
+    ),
   component: PricingPage,
 });
 

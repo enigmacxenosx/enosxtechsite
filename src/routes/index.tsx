@@ -1,3 +1,4 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Bot, Cpu, Github, Mic, Sparkles, Terminal, Globe } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
@@ -12,14 +13,12 @@ const DESCRIPTION =
   "Enosx Technologies builds practical software across multimodal AI, privacy-first browsing, commerce, publishing and desktop utilities. Founded in Kenya in 2024.";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-    ],
-  }),
+  head: () =>
+    createPageHead(
+      "Enosx Technologies — AI, Browsing, Commerce & Developer Tools",
+      "Enosx Technologies builds practical software across multimodal AI, privacy-first browsing, commerce, publishing and desktop utilities. Founded in Kenya in 2024.",
+      "/",
+    ),
   component: Index,
 });
 

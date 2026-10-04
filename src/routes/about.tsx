@@ -1,3 +1,4 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { LEADERSHIP, OPERATIONAL_TIERS, PERSONALITY_MODES, PRODUCTS, SITE } from "@/lib/site";
@@ -18,17 +19,12 @@ const DESCRIPTION =
   "How Enosx Technologies grew from a 2024 idea by Enosh Yeswa into a Kenya-based product studio building AI, web platforms, commerce, browsing and desktop utilities.";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [{ rel: "canonical", href: "/about" }],
-  }),
+  head: () =>
+    createPageHead(
+      "About Enosx Technologies — Our Story, Mission & Team",
+      "How Enosx Technologies grew from a 2024 idea by Enosh Yeswa into a Kenya-based product studio building AI, web platforms, commerce, browsing and desktop utilities.",
+      "/about",
+    ),
   component: AboutPage,
 });
 

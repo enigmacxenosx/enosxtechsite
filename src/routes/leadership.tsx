@@ -1,3 +1,4 @@
+import { createPageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { LEADERSHIP, SITE } from "@/lib/site";
@@ -18,18 +19,12 @@ const DESCRIPTION =
   "Meet the leadership team of Enosx Technologies, a Kenya-based product studio building AI, web platforms, commerce, browsing, publishing and desktop utilities.";
 
 export const Route = createFileRoute("/leadership")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/leadership" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [{ rel: "canonical", href: "/leadership" }],
-  }),
+  head: () =>
+    createPageHead(
+      "Leadership — Enosx Technologies",
+      "Meet the leadership team of Enosx Technologies, a Kenya-based product studio building AI, web platforms, commerce, browsing, publishing and desktop utilities.",
+      "/leadership",
+    ),
   component: LeadershipPage,
 });
 

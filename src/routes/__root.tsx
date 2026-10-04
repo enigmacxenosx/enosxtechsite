@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { SITE_URL, SOCIAL_IMAGE_URL } from "@/lib/seo";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -88,8 +89,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Enosx Technologies" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
-      { property: "og:url", content: "https://enosxtechnologies.vercel.app" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:image", content: SOCIAL_IMAGE_URL },
+      { property: "og:image:alt", content: "Enosx Technologies — practical software from Kenya" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Enosx Technologies" },
+      {
+        name: "twitter:description",
+        content:
+          "A Kenya-based product studio building practical AI, web, commerce, publishing and desktop software.",
+      },
+      { name: "twitter:image", content: SOCIAL_IMAGE_URL },
       {
         name: "keywords",
         content:
@@ -102,8 +112,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Enosx Technologies",
-          url: "https://enosxtechnologies.vercel.app",
-          logo: "https://enosxtechnologies.vercel.app/favicon.png",
+          url: SITE_URL,
+          logo: SOCIAL_IMAGE_URL,
           founder: {
             "@type": "Person",
             name: "Enosh Yeswa",
