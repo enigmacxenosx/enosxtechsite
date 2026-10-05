@@ -158,12 +158,22 @@ function AboutPage() {
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LEADERSHIP.map((leader) => (
             <article key={leader.name} className="glass overflow-hidden rounded-2xl">
-              <img
-                src={PHOTOS[leader.photoKey]}
-                alt={`${leader.name}, ${leader.role} at ${SITE.name}`}
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover object-top"
-              />
+              {leader.photoKey ? (
+                <img
+                  src={PHOTOS[leader.photoKey]}
+                  alt={`${leader.name}, ${leader.role} at ${SITE.name}`}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover object-top"
+                />
+              ) : (
+                <div
+                  role="img"
+                  aria-label={`${leader.name}, ${leader.role} at ${SITE.name}`}
+                  className="flex aspect-[4/3] items-center justify-center bg-gradient-brand text-6xl font-extrabold text-primary-foreground"
+                >
+                  {leader.initials}
+                </div>
+              )}
               <div className="p-6">
                 <h3 className="text-lg font-bold">{leader.name}</h3>
                 <p className="font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">

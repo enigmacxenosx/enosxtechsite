@@ -47,14 +47,24 @@ function LeadershipPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LEADERSHIP.map((l) => (
             <article key={l.name} className="glass overflow-hidden rounded-2xl">
-              <img
-                src={PHOTOS[l.photoKey]}
-                alt={`${l.name}, ${l.role} at ${SITE.name}`}
-                width={816}
-                height={816}
-                loading="lazy"
-                className="aspect-square w-full object-cover"
-              />
+              {l.photoKey ? (
+                <img
+                  src={PHOTOS[l.photoKey]}
+                  alt={`${l.name}, ${l.role} at ${SITE.name}`}
+                  width={816}
+                  height={816}
+                  loading="lazy"
+                  className="aspect-square w-full object-cover"
+                />
+              ) : (
+                <div
+                  role="img"
+                  aria-label={`${l.name}, ${l.role} at ${SITE.name}`}
+                  className="flex aspect-square items-center justify-center bg-gradient-brand text-7xl font-extrabold text-primary-foreground"
+                >
+                  {l.initials}
+                </div>
+              )}
               <div className="p-7">
                 <h2 className="text-xl font-bold">{l.name}</h2>
                 <p className="mt-1 font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">

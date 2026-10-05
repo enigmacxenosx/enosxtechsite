@@ -32,34 +32,44 @@ export const WHATSAPP_GROUPS = [
 export type Leader = {
   name: string;
   role: string;
-  photoKey: "enosh" | "fortune" | "tracey" | "grace";
+  photoKey?: "enosh" | "fortune" | "tracey" | "grace";
+  initials: string;
   bio: string;
 };
 
 export const LEADERSHIP: Leader[] = [
   {
     name: "Enosh Yeswa",
-    role: "Founder & Product Engineer",
+    role: "Founder & Chief Executive Officer",
     photoKey: "enosh",
-    bio: "Founder and product engineer building at the intersection of AI, web platforms, e-commerce and SaaS. Enosh leads the Enosx product ecosystem from Kenya, taking ideas from rough sketches to focused products with clear purpose and room to scale.",
+    initials: "EY",
+    bio: "Founder and chief executive setting the vision, product direction and strategic priorities for ENOSX Technologies from Kenya.",
   },
   {
-    name: "Fortune",
-    role: "Head of SEO",
-    photoKey: "fortune",
-    bio: "Leads search and organic growth across the Enosx ecosystem through keyword strategy, technical SEO and content that helps useful products reach the right people.",
+    name: "Eddy",
+    role: "Product & Engineering Lead",
+    initials: "ED",
+    bio: "Owns ENOSX AI product development, infrastructure, integrations, security, speed and technical reliability.",
   },
   {
     name: "Tracey Iyvone",
-    role: "Leadership Team",
+    role: "Growth, Marketing & Community Lead",
     photoKey: "tracey",
-    bio: "Contributes to the leadership team at Enosx Technologies, helping shape thoughtful products that make technology more useful for people and businesses.",
+    initials: "TI",
+    bio: "Owns content, social media, community, referrals, ambassadors and user acquisition for ENOSX AI.",
   },
   {
     name: "Grace Wangare",
-    role: "Team Member",
+    role: "Product Design & User Research Lead",
     photoKey: "grace",
-    bio: "Part of the team behind Enosx Technologies.",
+    initials: "GW",
+    bio: "Owns user experience, onboarding, user interviews, workflow design and evidence-based product feedback.",
+  },
+  {
+    name: "Frank",
+    role: "Sales, Partnerships & Customer Success Lead",
+    initials: "FR",
+    bio: "Owns customer demonstrations, business pilots, partnerships, onboarding, feedback and long-term user retention.",
   },
 ];
 
