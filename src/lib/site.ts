@@ -35,6 +35,8 @@ export type Leader = {
   photoKey?: "enosh" | "fortune" | "tracey" | "grace";
   initials: string;
   bio: string;
+  ownership: string;
+  first30DayTarget: string;
 };
 
 export const LEADERSHIP: Leader[] = [
@@ -44,12 +46,18 @@ export const LEADERSHIP: Leader[] = [
     photoKey: "enosh",
     initials: "EY",
     bio: "Founder and chief executive setting the vision, product direction and strategic priorities for ENOSX Technologies from Kenya.",
+    ownership: "Vision, strategy, leadership, major decisions and key partnerships",
+    first30DayTarget:
+      "Select the three highest-priority ENOSX AI workflows and establish the weekly review rhythm.",
   },
   {
     name: "Eddy",
     role: "Product & Engineering Lead",
     initials: "ED",
     bio: "Owns ENOSX AI product development, infrastructure, integrations, security, speed and technical reliability.",
+    ownership: "Product development, infrastructure, integrations and security",
+    first30DayTarget:
+      "Audit the product, document the top three technical priorities and improve reliability.",
   },
   {
     name: "Tracey Iyvone",
@@ -57,6 +65,9 @@ export const LEADERSHIP: Leader[] = [
     photoKey: "tracey",
     initials: "TI",
     bio: "Owns content, social media, community, referrals, ambassadors and user acquisition for ENOSX AI.",
+    ownership: "Content, social media, community, referrals and acquisition",
+    first30DayTarget:
+      "Publish a 30-day content plan and track qualified signups and referral sources.",
   },
   {
     name: "Grace Wangare",
@@ -64,12 +75,18 @@ export const LEADERSHIP: Leader[] = [
     photoKey: "grace",
     initials: "GW",
     bio: "Owns user experience, onboarding, user interviews, workflow design and evidence-based product feedback.",
+    ownership: "User experience, onboarding, interviews and workflow design",
+    first30DayTarget:
+      "Complete at least 10 user interviews and identify the three most valuable workflows.",
   },
   {
     name: "Frank",
     role: "Sales, Partnerships & Customer Success Lead",
     initials: "FR",
     bio: "Owns customer demonstrations, business pilots, partnerships, onboarding, feedback and long-term user retention.",
+    ownership: "Customers, demonstrations, partnerships, onboarding and retention",
+    first30DayTarget:
+      "Contact 30 prospects, arrange demonstrations and find the first serious pilot leads.",
   },
 ];
 
