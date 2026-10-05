@@ -32,7 +32,7 @@ export const WHATSAPP_GROUPS = [
 export type Leader = {
   name: string;
   role: string;
-  photoKey?: "enosh" | "fortune" | "tracey" | "grace";
+  photoKey?: "enosh" | "tracey" | "grace";
   initials: string;
   bio: string;
   ownership: string;

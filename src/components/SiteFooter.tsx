@@ -4,8 +4,6 @@ import logo from "@/assets/enosx-logo-new.png";
 import { PRODUCTS, SITE, WHATSAPP_GROUPS } from "@/lib/site";
 import { NewsletterSignup } from "./NewsletterSignup";
 
-
-
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border bg-card/40">
@@ -36,7 +34,6 @@ export function SiteFooter() {
           </div>
         </div>
 
-
         <div>
           <h2 className="font-display text-xs font-bold tracking-widest text-muted-foreground">
             PRODUCTS
@@ -54,7 +51,7 @@ export function SiteFooter() {
                 </a>
               </li>
             ))}
-                        <li>
+            <li>
               <Link
                 to="/products"
                 className="text-muted-foreground transition-colors hover:text-primary"
@@ -88,7 +85,6 @@ export function SiteFooter() {
             </li>
           </ul>
         </div>
-
 
         <div>
           <h2 className="font-display text-xs font-bold tracking-widest text-muted-foreground">
@@ -190,12 +186,11 @@ export function SiteFooter() {
                 to="/leadership"
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
-                Leadership
+                Teams
               </Link>
             </li>
           </ul>
         </div>
-
       </div>
 
       <div className="border-t border-border px-5 py-6 text-center text-xs text-muted-foreground">

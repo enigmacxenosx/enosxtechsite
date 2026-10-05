@@ -3,13 +3,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { LEADERSHIP, SITE } from "@/lib/site";
 import enoshPhoto from "@/assets/leader-enosh.jpg";
-import fortunePhoto from "@/assets/leader-fortune.jpg";
 import traceyPhoto from "@/assets/leader-tracey.svg";
 import gracePhoto from "@/assets/leader-grace.svg";
 
-const PHOTOS: Record<"enosh" | "fortune" | "tracey" | "grace", string> = {
+const PHOTOS: Record<"enosh" | "tracey" | "grace", string> = {
   enosh: enoshPhoto,
-  fortune: fortunePhoto,
   tracey: traceyPhoto,
   grace: gracePhoto,
 };

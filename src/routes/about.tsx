@@ -3,13 +3,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { LEADERSHIP, OPERATIONAL_TIERS, PERSONALITY_MODES, PRODUCTS, SITE } from "@/lib/site";
 import enoshPhoto from "@/assets/leader-enosh.jpg";
-import fortunePhoto from "@/assets/leader-fortune.jpg";
 import traceyPhoto from "@/assets/leader-tracey.svg";
 import gracePhoto from "@/assets/leader-grace.svg";
 
-const PHOTOS: Record<"enosh" | "fortune" | "tracey" | "grace", string> = {
+const PHOTOS: Record<"enosh" | "tracey" | "grace", string> = {
   enosh: enoshPhoto,
-  fortune: fortunePhoto,
   tracey: traceyPhoto,
   grace: gracePhoto,
 };
@@ -89,7 +87,7 @@ function AboutPage() {
             {[
               { k: `${SITE.founded}`, v: "Year founded" },
               { k: `${PRODUCTS.length}`, v: "Products shipped" },
-              { k: `${LEADERSHIP.length}`, v: "Leadership team" },
+              { k: `${LEADERSHIP.length}`, v: "Team members" },
             ].map((s) => (
               <div key={s.v} className="glass rounded-xl p-5">
                 <p className="text-gradient-brand text-3xl font-extrabold">{s.k}</p>
@@ -188,7 +186,7 @@ function AboutPage() {
           to="/leadership"
           className="glass mt-8 inline-flex rounded-xl px-6 py-3 text-sm font-semibold"
         >
-          See the full leadership page
+          See the full Teams page
         </Link>
       </section>
 
