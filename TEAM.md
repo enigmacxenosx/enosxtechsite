@@ -4,14 +4,14 @@ This repository is part of the ENOSX Technologies ecosystem. The current team st
 
 | Member | Role | Primary ownership |
 |---|---|---|
-| **Enosh** | Founder and Chief Executive Officer | Vision, strategy, leadership, major decisions, and key partnerships |
-| **Grace** | Product Design and User Research Lead | User experience, onboarding, user interviews, and workflow design |
-| **Tracey** | Growth, Marketing and Community Lead | Content, social media, community, referrals, and acquisition |
+| **Enosh Yeswa** | Founder and Chief Executive Officer | Vision, strategy, leadership, major decisions, and key partnerships |
+| **Grace Wangare** | Product Design and User Research Lead | User experience, onboarding, user interviews, and workflow design |
+| **Tracey Ivyone** | Growth, Marketing and Community Lead | Content, social media, community, referrals, and acquisition |
 | **Vince Odhiambo** | Executive Assistant | Administrative coordination, scheduling, meeting follow-ups, and founder support |
 
 ## How we work
 
-Each member owns outcomes, not only a title. The team coordinates around building, acquiring, activating, retaining, and monetizing ENOSX AI users. Enosh sets company priorities and resolves major decisions; role owners make decisions within their areas and report measurable progress weekly.
+Each member owns outcomes, not only a title. The team coordinates around building, acquiring, activating, retaining, and monetizing ENOSX AI users. Enosh Yeswa sets company priorities and resolves major decisions; role owners make decisions within their areas and report measurable progress weekly.
 
 ## Weekly team sync
 

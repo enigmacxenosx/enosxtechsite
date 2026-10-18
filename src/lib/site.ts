@@ -51,7 +51,7 @@ export const LEADERSHIP: Leader[] = [
       "Select the three highest-priority ENOSX AI workflows and establish the weekly review rhythm.",
   },
   {
-    name: "Tracey Iyvone",
+    name: "Tracey Ivyone",
     role: "Growth, Marketing & Community Lead",
     photoKey: "tracey",
     initials: "TI",

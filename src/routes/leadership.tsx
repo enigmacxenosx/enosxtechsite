@@ -84,9 +84,9 @@ function LeadershipPage() {
             </p>
             <h2 className="mt-3 text-3xl font-bold">Ownership that moves ENOSX AI forward</h2>
             <p className="mt-4 text-muted-foreground">
-              Every role owns a business result, not just a title. Grace learns from users, Tracey
-              brings the right people in, Vince keeps the operating rhythm coordinated, and Enosh
-              keeps the team aligned on the highest-impact priorities.
+              Every role owns a business result, not just a title. Grace Wangare learns from users,
+              Tracey Ivyone brings the right people in, Vince Odhiambo keeps the operating rhythm
+              coordinated, and Enosh Yeswa keeps the team aligned on the highest-impact priorities.
             </p>
           </div>
 
