@@ -1,6 +1,7 @@
 import { createPageHead } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
+import { TeamAvatar } from "@/components/TeamAvatar";
 import { LEADERSHIP, OPERATIONAL_TIERS, PERSONALITY_MODES, PRODUCTS, SITE } from "@/lib/site";
 import enoshPhoto from "@/assets/leader-enosh.jpg";
 import traceyPhoto from "@/assets/leader-tracey.svg";
@@ -173,10 +174,15 @@ function AboutPage() {
                 </div>
               )}
               <div className="p-6">
-                <h3 className="text-lg font-bold">{leader.name}</h3>
-                <p className="font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">
-                  {leader.role}
-                </p>
+                <div className="flex items-center gap-4">
+                  <TeamAvatar leader={leader} size="sm" />
+                  <div>
+                    <h3 className="text-lg font-bold">{leader.name}</h3>
+                    <p className="font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">
+                      {leader.role}
+                    </p>
+                  </div>
+                </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{leader.bio}</p>
               </div>
             </article>

@@ -1,6 +1,7 @@
 import { createPageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
+import { TeamAvatar } from "@/components/TeamAvatar";
 import { LEADERSHIP, SITE } from "@/lib/site";
 import enoshPhoto from "@/assets/leader-enosh.jpg";
 import traceyPhoto from "@/assets/leader-tracey.svg";
@@ -59,10 +60,15 @@ function LeadershipPage() {
                 </div>
               )}
               <div className="p-7">
-                <h2 className="text-xl font-bold">{l.name}</h2>
-                <p className="mt-1 font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">
-                  {l.role}
-                </p>
+                <div className="flex items-center gap-4">
+                  <TeamAvatar leader={l} size="sm" />
+                  <div>
+                    <h2 className="text-xl font-bold">{l.name}</h2>
+                    <p className="mt-1 font-display text-xs font-bold uppercase tracking-widest text-cyan-brand">
+                      {l.role}
+                    </p>
+                  </div>
+                </div>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{l.bio}</p>
                 <div className="mt-6 border-t border-border pt-5">
                   <p className="font-display text-[0.68rem] font-bold uppercase tracking-[0.18em] text-purple-brand">
