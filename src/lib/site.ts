@@ -88,6 +88,15 @@ export const LEADERSHIP: Leader[] = [
     first30DayTarget:
       "Contact 30 prospects, arrange demonstrations and find the first serious pilot leads.",
   },
+  {
+    name: "Vince Odhiambo",
+    role: "Executive Assistant",
+    initials: "VO",
+    bio: "Supports the founder and team with dependable administration, scheduling, coordination and follow-through across ENOSX Technologies.",
+    ownership: "Administrative coordination, scheduling, meeting follow-ups and founder support",
+    first30DayTarget:
+      "Establish the founder’s operating rhythm, maintain the action register and close the loop on priority follow-ups.",
+  },
 ];
 
 export type Product = {
