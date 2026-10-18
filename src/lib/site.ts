@@ -51,15 +51,6 @@ export const LEADERSHIP: Leader[] = [
       "Select the three highest-priority ENOSX AI workflows and establish the weekly review rhythm.",
   },
   {
-    name: "Eddy",
-    role: "Product & Engineering Lead",
-    initials: "ED",
-    bio: "Owns ENOSX AI product development, infrastructure, integrations, security, speed and technical reliability.",
-    ownership: "Product development, infrastructure, integrations and security",
-    first30DayTarget:
-      "Audit the product, document the top three technical priorities and improve reliability.",
-  },
-  {
     name: "Tracey Iyvone",
     role: "Growth, Marketing & Community Lead",
     photoKey: "tracey",
@@ -78,15 +69,6 @@ export const LEADERSHIP: Leader[] = [
     ownership: "User experience, onboarding, interviews and workflow design",
     first30DayTarget:
       "Complete at least 10 user interviews and identify the three most valuable workflows.",
-  },
-  {
-    name: "Frank",
-    role: "Sales, Partnerships & Customer Success Lead",
-    initials: "FR",
-    bio: "Owns customer demonstrations, business pilots, partnerships, onboarding, feedback and long-term user retention.",
-    ownership: "Customers, demonstrations, partnerships, onboarding and retention",
-    first30DayTarget:
-      "Contact 30 prospects, arrange demonstrations and find the first serious pilot leads.",
   },
   {
     name: "Vince Odhiambo",
